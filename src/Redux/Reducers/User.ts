@@ -1,7 +1,7 @@
 import types from "../Actions/types";
 
 const initialState = {
-  name: "",
+  name: [],
   students: [],
 };
 
@@ -14,7 +14,7 @@ export const UserReducer = (state = initialState, { type, data }: any) => {
       };
     case types.CLEAR:
       return {
-        name: "",
+        name: [],
         students: [],
       };
     default:
