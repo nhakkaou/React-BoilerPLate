@@ -1,11 +1,6 @@
 import types from "../Actions/types";
-
-const initialState = [
-  {
-    name: "",
-    students: [],
-  },
-];
+import { typeUser } from "../../Helpers";
+const initialState: typeUser[] = [];
 
 export const UserReducer = (state = initialState, { type, data }: any) => {
   switch (type) {
