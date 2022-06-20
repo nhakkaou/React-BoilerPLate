@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 import { useDispatch } from "react-redux";
 import types from "../Redux/Actions/types";
-import { typeUser, filterClasses } from "../Helpers";
+import { filterClasses } from "../Helpers";
 import AppAPI from "../Services/App";
 const Login: FC = () => {
   const dispatch = useDispatch();

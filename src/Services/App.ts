@@ -8,7 +8,7 @@ const AppAPI = {
         return response.data.records;
       })
       .catch((error) => {
-        console.log(error);
+        console.log("getStudents :", error);
       });
   },
   getClasses: (formula: string) => {
@@ -18,7 +18,7 @@ const AppAPI = {
         return response.data.records;
       })
       .catch((error) => {
-        console.log(error);
+        console.log("getClasses:", error);
       });
   },
 };
