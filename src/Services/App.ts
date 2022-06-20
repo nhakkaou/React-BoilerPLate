@@ -2,9 +2,8 @@ import Api from "./Api";
 
 const AppAPI = {
   getStudents: (formula: string) => {
-    console.log(formula);
     return Api()
-      .get("/Students?filterByFormula=" + formula)
+      .get(`/Students?filterByFormula=${formula}`)
       .then((response) => {
         return response.data.records;
       })
